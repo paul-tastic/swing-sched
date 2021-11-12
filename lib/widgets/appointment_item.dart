@@ -116,7 +116,8 @@ class _AppointmentItemState extends State<AppointmentItem> {
   void confirmDelete(context) async {
     AlertDialog alert = AlertDialog(
       title: Text('Confirm Delete'),
-      content: Text('please confirm you wish to delete this appointment'),
+      content: Text(
+          'please confirm you wish to delete your ${widget.apptTime} appointment'),
       actions: [
         TextButton(
           onPressed: () {
