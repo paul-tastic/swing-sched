@@ -49,7 +49,7 @@ class _AppointmentItemState extends State<AppointmentItem> {
               TextFormField(
                 controller: _nameController,
                 validator: (value) {
-                  if (value!.length == 0) return 'name cannot be empty';
+                  if (value!.length == 0) return 'Name is required';
                 },
                 textInputAction: TextInputAction.next,
                 decoration: const InputDecoration(
@@ -65,7 +65,7 @@ class _AppointmentItemState extends State<AppointmentItem> {
                 validator: (value) {
                   // validate 10 digits (all numbers)
                   if (value!.length < 10) {
-                    return 'phone number must be 10 digits.';
+                    return 'Invalid number';
                   }
                 },
                 textInputAction: TextInputAction.done,
@@ -128,7 +128,6 @@ class _AppointmentItemState extends State<AppointmentItem> {
         ElevatedButton(
           onPressed: () {
             setState(() {
-              print('** cancel appointment');
               widget.isBooked = false;
               widget.name = '';
               widget.phoneNumber = '';
