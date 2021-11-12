@@ -37,7 +37,8 @@ class _AppointmentItemState extends State<AppointmentItem> {
   }
 
   void bookAppointment() {
-    print('book appointment logic');
+    _nameController.text = '';
+    _numberController.text = '';
     AlertDialog bookingForm = AlertDialog(
       title: Text('New booking for ${widget.apptTime}'),
       content: Container(
@@ -63,7 +64,6 @@ class _AppointmentItemState extends State<AppointmentItem> {
               TextFormField(
                 controller: _numberController,
                 validator: (value) {
-                  // validate 10 digits (all numbers)
                   if (value!.length < 10) {
                     return 'Invalid number';
                   }
@@ -81,6 +81,8 @@ class _AppointmentItemState extends State<AppointmentItem> {
                   TextButton(
                     onPressed: () {
                       Navigator.pop(context);
+                      _nameController.text = '';
+                      _numberController.text = '';
                     },
                     child: Text('Cancel'),
                   ),
