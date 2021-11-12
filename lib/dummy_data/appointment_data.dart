@@ -6,7 +6,7 @@ List<Appointment> APPOINTMENT_DATA = [
   Appointment(
     id: 1,
     isBooked: true,
-    apptTime: '0800-0830',
+    apptTime: '8:00-8:30',
     phoneNumber: '(214) 724-0609',
     name: 'Paul McNeme',
     lessons: 2,
@@ -14,7 +14,7 @@ List<Appointment> APPOINTMENT_DATA = [
   Appointment(
     id: 2,
     isBooked: false,
-    apptTime: '0830-0900',
+    apptTime: '8:30-9:00',
     phoneNumber: '',
     name: '',
     lessons: 0,
@@ -22,7 +22,7 @@ List<Appointment> APPOINTMENT_DATA = [
   Appointment(
     id: 3,
     isBooked: false,
-    apptTime: '0900-0930',
+    apptTime: '9:00-9:30',
     phoneNumber: '',
     name: '',
     lessons: 0,
@@ -30,7 +30,7 @@ List<Appointment> APPOINTMENT_DATA = [
   Appointment(
     id: 4,
     isBooked: true,
-    apptTime: '0930-1000',
+    apptTime: '9:30-10:00',
     phoneNumber: '(214) 867-5309',
     name: 'Jenny',
     lessons: 0,
@@ -38,7 +38,7 @@ List<Appointment> APPOINTMENT_DATA = [
   Appointment(
     id: 5,
     isBooked: false,
-    apptTime: '1000-1030',
+    apptTime: '10:00-10:30',
     phoneNumber: '',
     name: '',
     lessons: 0,
@@ -46,7 +46,7 @@ List<Appointment> APPOINTMENT_DATA = [
   Appointment(
     id: 6,
     isBooked: false,
-    apptTime: '1030-1100',
+    apptTime: '10:30-11:00',
     phoneNumber: '',
     name: '',
     lessons: 0,
@@ -54,7 +54,7 @@ List<Appointment> APPOINTMENT_DATA = [
   Appointment(
     id: 7,
     isBooked: false,
-    apptTime: '1100-1130',
+    apptTime: '11:00-11:30',
     phoneNumber: '',
     name: '',
     lessons: 0,
@@ -62,7 +62,7 @@ List<Appointment> APPOINTMENT_DATA = [
   Appointment(
     id: 8,
     isBooked: false,
-    apptTime: '1130-1200',
+    apptTime: '11:30-12:00',
     phoneNumber: '',
     name: '',
     lessons: 0,
@@ -70,7 +70,7 @@ List<Appointment> APPOINTMENT_DATA = [
   Appointment(
     id: 9,
     isBooked: true,
-    apptTime: '1200-1230',
+    apptTime: '12:00-12:30',
     phoneNumber: '(214) 489-4608',
     name: 'Alicia Keys',
     lessons: 90,
@@ -78,7 +78,7 @@ List<Appointment> APPOINTMENT_DATA = [
   Appointment(
     id: 10,
     isBooked: false,
-    apptTime: '1230-1300',
+    apptTime: '12:30-1:00',
     phoneNumber: '',
     name: '',
     lessons: 0,
@@ -86,7 +86,7 @@ List<Appointment> APPOINTMENT_DATA = [
   Appointment(
     id: 11,
     isBooked: false,
-    apptTime: '1300-1330',
+    apptTime: '1:00-1:30',
     phoneNumber: '',
     name: '',
     lessons: 0,
@@ -94,7 +94,7 @@ List<Appointment> APPOINTMENT_DATA = [
   Appointment(
     id: 12,
     isBooked: false,
-    apptTime: '1330-1400',
+    apptTime: '1:30-2:00',
     phoneNumber: '',
     name: '',
     lessons: 0,
@@ -102,7 +102,7 @@ List<Appointment> APPOINTMENT_DATA = [
   Appointment(
     id: 13,
     isBooked: false,
-    apptTime: '1400-1430',
+    apptTime: '2:00-2:30',
     phoneNumber: '',
     name: '',
     lessons: 0,
@@ -110,7 +110,7 @@ List<Appointment> APPOINTMENT_DATA = [
   Appointment(
     id: 14,
     isBooked: false,
-    apptTime: '1430-1500',
+    apptTime: '2:30-3:00',
     phoneNumber: '',
     name: '',
     lessons: 0,
@@ -118,7 +118,7 @@ List<Appointment> APPOINTMENT_DATA = [
   Appointment(
     id: 15,
     isBooked: false,
-    apptTime: '1500-1530',
+    apptTime: '3:00-3:30',
     phoneNumber: '',
     name: '',
     lessons: 0,
@@ -126,23 +126,7 @@ List<Appointment> APPOINTMENT_DATA = [
   Appointment(
     id: 16,
     isBooked: false,
-    apptTime: '1530-1600',
-    phoneNumber: '',
-    name: '',
-    lessons: 0,
-  ),
-  Appointment(
-    id: 17,
-    isBooked: false,
-    apptTime: '1600-1630',
-    phoneNumber: '',
-    name: '',
-    lessons: 0,
-  ),
-  Appointment(
-    id: 18,
-    isBooked: false,
-    apptTime: '1630-1700',
+    apptTime: '3:30-4:00',
     phoneNumber: '',
     name: '',
     lessons: 0,

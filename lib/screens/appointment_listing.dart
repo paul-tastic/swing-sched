@@ -1,24 +1,30 @@
 import 'package:flutter/material.dart';
+import 'package:swing_sched/dummy_data/appointment_data.dart';
 import 'package:swing_sched/models/appointment.dart';
 import 'package:swing_sched/widgets/appointment_item.dart';
 
 class AppointmentListing extends StatefulWidget {
   static const routeName = '/appointment-listing';
-  //const AppointmentListing({Key? key}) : super(key: key);
-  final List<Appointment> appointments;
-  AppointmentListing(this.appointments);
 
   @override
   _AppointmentListingState createState() => _AppointmentListingState();
 }
 
 class _AppointmentListingState extends State<AppointmentListing> {
+  List<Appointment> appointments = APPOINTMENT_DATA;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        leading: Padding(
+          padding: const EdgeInsets.all(3.0),
+          child: Image.asset('assets/images/pga-logo.png'),
+        ),
         centerTitle: true,
-        title: Text('Swing Scheduler'),
+        title: Text(
+          'Swing Scheduler',
+          style: TextStyle(color: Theme.of(context).accentColor),
+        ),
       ),
       body: Container(
         child: Column(
@@ -30,7 +36,10 @@ class _AppointmentListingState extends State<AppointmentListing> {
                 padding: const EdgeInsets.all(8.0),
                 child: Text(
                   'Today\'s Appointments',
-                  style: TextStyle(fontSize: 18.0, fontWeight: FontWeight.bold),
+                  style: TextStyle(
+                    fontSize: 18.0,
+                    fontWeight: FontWeight.bold,
+                  ),
                   textAlign: TextAlign.center,
                 ),
               ),
@@ -39,16 +48,16 @@ class _AppointmentListingState extends State<AppointmentListing> {
             Expanded(
               child: ListView.builder(
                   shrinkWrap: true,
-                  itemCount: widget.appointments.length,
+                  itemCount: appointments.length,
                   itemBuilder: (ctx, index) {
                     //return Text('timeslot: $index');
                     return AppointmentItem(
-                      id: widget.appointments[index].id,
-                      isBooked: widget.appointments[index].isBooked,
-                      apptTime: widget.appointments[index].apptTime,
-                      phoneNumber: widget.appointments[index].phoneNumber,
-                      name: widget.appointments[index].name,
-                      lessons: widget.appointments[index].lessons,
+                      id: appointments[index].id,
+                      isBooked: appointments[index].isBooked,
+                      apptTime: appointments[index].apptTime,
+                      phoneNumber: appointments[index].phoneNumber,
+                      name: appointments[index].name,
+                      lessons: appointments[index].lessons,
                     );
                   }),
             )
